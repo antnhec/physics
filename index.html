@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Physics Test</title>
+<head>
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+</head>
+<body>
+  <a-scene physics="debug: true">
 
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
-  </head>
+    <a-box dynamic-body position="0 3 -3" color="red"></a-box>
 
-  <body>
-    <a-scene physics="debug: true">
+    <a-plane static-body rotation="-90 0 0" position="0 0 -3" width="10" height="10" color="green"></a-plane>
 
-      <a-box
-        dynamic-body
-        position="0 3 -3"
-        color="red">
-      </a-box>
+    <a-sky color="#ECECEC"></a-sky>
 
-      <a-plane
-        static-body
-        rotation="-90 0 0"
-        position="0 0 -3"
-        width="10"
-        height="10"
-        color="green">
-      </a-plane>
-
-      <a-sky color="#ECECEC"></a-sky>
-
-    </a-scene>
-  </body>
+  </a-scene>
+</body>
 </html>
