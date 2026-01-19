@@ -1,6 +1,6 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
   </head>
 
@@ -9,26 +9,22 @@
 
       <a-box
         dynamic-body
-        position="0 2 0"
-        rotation="0 45 0"
+        position="0 3 -3"
         color="#4CC3D9">
       </a-box>
 
       <a-plane
         static-body
-        position="0 0 0"
+        position="0 0 -3"
         rotation="-90 0 0"
-        width="4"
-        height="4"
+        width="6"
+        height="6"
         color="#7BC8A4">
       </a-plane>
 
       <a-sky color="#ECECEC"></a-sky>
 
-      <a-camera position="0 1.6 4">
-        <a-cursor></a-cursor>
-      </a-camera>
-
     </a-scene>
   </body>
 </html>
+
