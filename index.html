@@ -6,14 +6,15 @@
   </head>
   <body>
     <a-scene>
-      <!-- Camera -->
-      <a-entity camera position="0 1.6 0"></a-entity>
+      <!-- Camera with movement -->
+      <a-entity camera wasd-controls position="0 1.6 5"></a-entity>
 
-      <!-- Environment -->
+      <!-- Forest environment -->
       <a-entity environment="preset: forest; groundY: 0"></a-entity>
-      
-      </a-box></a-box>
-      
+
+      <!-- Box -->
+      <a-box position="0 1 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+
       <!-- Lighting -->
       <a-light type="directional" position="0 10 0" color="#FA7FC9" intensity="1"></a-light>
       <a-light type="ambient" color="#FAFFE0" intensity="0.2"></a-light>
